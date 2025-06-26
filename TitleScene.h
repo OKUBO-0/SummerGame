@@ -7,6 +7,7 @@
 #include "WorldTransform.h"
 #include <assert.h>
 #include "ViewProjection.h"
+#include "Skydome.h"
 
 class TitleScene {
 public:
@@ -36,4 +37,8 @@ private:
 	Model* model_ = nullptr;
 
 	bool finished_ = false;
+
+	// SkyDome
+	Skydome* skydome_ = nullptr;
+	Model* modelSkydome_ = nullptr;
 };
